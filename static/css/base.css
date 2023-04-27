@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&family=Unna&display=swap');
+
+:root {
+    --title : 'Roboto', serif;
+    --main-font: 'Unna', serif;
+}
+
+html, body {
+    height: 100%
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--main-font);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--title);
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+/* Footer */
+.line{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.media{
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.sarah{
+    margin:0 auto;
+    font-size:xx-small;
+}
+
+.git {
+    height: 1rem;
+    margin-left: 0.5rem;
+}
+
+.social-media {
+    height: 2rem;
+    margin: 1rem;
+}
