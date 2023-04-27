@@ -1,1 +1,82 @@
 {% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay">
+                <img class="d-block w-100" src="{% static '/images/chair-narrow.jpg'%}" alt="pic of barber chair">
+                </div>
+                <div class="carousel-caption d-md-block">
+                    <h1 class="quote">"Fresh Fades and Tight Shaves"</h5>
+                    <button type="button" class="btn btn-light book-now"><a href="">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay">
+                <img class="d-block w-100" src="{% static '/images/duncan-narrow.jpg' %}" alt="duncan holding a pint">
+                </div>
+                <div class="carousel-caption d-md-block">
+                    <h1 class="quote">"Fine hands for fine haircuts"</h5>
+                    <button type="button" class="btn btn-light book-now"><a href="">Book Now!</a></button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <div class="overlay">
+                <img class="d-block w-100" src="{% static '/images/shop-front-narrow.jpg' 
+                %}" alt="the barber shop front">
+                </div>
+                <div class="carousel-caption d-md-block">
+                    <h1 class="quote">"Life isn`t perfect but your hair can be!"</h5>
+                    <button type="button" class="btn btn-light book-now"><a href="">Book Now!</a></button>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center">Services</h1>
+        </div>
+    </div>
+    <div class="container services">
+        <div class="row">
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Book Service</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="card">
+                    <div class="card-body">
+                    <h5 class="card-title">Special title treatment</h5>
+                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container products"></div>
+    <div class="container reviews"></div>
+{% endblock %}
