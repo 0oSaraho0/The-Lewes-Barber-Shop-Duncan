@@ -56,3 +56,19 @@ main {
     height: 2rem;
     margin: 1rem;
 }
+
+/* services on homepage */
+
+.card-img-top{
+    height: 10rem;
+    width: 8rem !important;   
+    margin: auto;
+}
+
+.card {
+    border: none;
+}
+
+.card-title {
+    text-align: center;
+}

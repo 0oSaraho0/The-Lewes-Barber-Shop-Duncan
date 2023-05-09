@@ -54,26 +54,26 @@
             <h1 class="text-center">Services</h1>
         </div>
     </div>
-    <div class="container services">
+    <div class="container services d-flex flex-row flex-wrap justify-content-center">
         <div class="row">
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Book Service</a>
-                    </div>
+            {% for service in services %}
+            <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{service.image.url}}" alt="Card image cap">
+                <div class="card-body">
+                    <h2 class="card-title">{{service.service}}</h2>
+                    <p class="card-text">Price: £{{service.price}}</p>
+                    <p class="card-text">Time: {{service.time}} minutes</p>
+                    {% if description %}
+                    <p class="card-text">{{service.description}}</p>
+                    {% endif %}
+                    <a href="#" class="btn btn-primary">Book {{service.service}}</a>
                 </div>
             </div>
-            <div class="col-sm-6">
-                <div class="card">
-                    <div class="card-body">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
             </div>
+            {% endfor %}
+        </div>
+        
         </div>
     </div>
     <div class="container products"></div>
