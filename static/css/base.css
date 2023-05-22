@@ -16,7 +16,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--title);
+
 }
 
 main {
@@ -59,16 +59,22 @@ main {
 
 /* services on homepage */
 
-.card-img-top{
+.card-image-service{
     height: 10rem;
     width: 8rem !important;   
     margin: auto;
 }
 
-.card {
+.service-card {
     border: none;
 }
 
 .card-title {
     text-align: center;
+}
+
+/* Products */
+
+.product-card {
+    border: solid 1px rgba(0,0,0,.125);
 }

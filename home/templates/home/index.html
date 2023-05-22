@@ -58,8 +58,8 @@
         <div class="row">
             {% for service in services %}
             <div class="col-md-4">
-            <div class="card" style="width: 18rem;">
-                <img class="card-img-top" src="{{service.image.url}}" alt="Card image cap">
+            <div class="card service-card" style="width: 18rem;">
+                <img class="card-img-top card-image-service" src="{{service.image.url}}" alt="Card image cap">
                 <div class="card-body">
                     <h2 class="card-title">{{service.service}}</h2>
                     <p class="card-text">Price: £{{service.price}}</p>

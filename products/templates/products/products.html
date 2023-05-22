@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+
+
+{% block content %}
+
+<h1 class="text-center p-2 d-block">Products</h1>
+
+<div class="container d-flex flex-row flex-wrap justify-content-center">
+    {% for product in products %}
+    <div class="card product-card m-3" style="width: 18rem;">
+        <img class="card-img-top mt-3" src="{{product.image.url}}" alt="picture of {{product.product}}">
+        <div class="card-body">
+            <h2 class="display-5">{{product.product}}</h2>
+            {% if product.description %}
+            <p>{{product.description}}</p>
+            {% endif %}
+            <p class="card-text"><strong>£{{product.price}}</strong></p>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+
+
+{% endblock %}
