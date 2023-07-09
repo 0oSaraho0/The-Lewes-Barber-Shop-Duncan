@@ -68,11 +68,17 @@ main {
 /* carousel on home page */
 .carousel-inner{
     background-color: black;
+    height: 38vw;
 }
 
 .overlay {
-    opacity: 0.5;
+    opacity: 0. 5;
     
+}
+
+.carousel-caption {
+    position: sticky;
+    bottom: 117px;  
 }
 
 /* services on homepage */
@@ -87,7 +93,8 @@ main {
 }
 
 .service-card {
-    border: none;
+    /* border: none; */
+
 }
 
 .card-title {
